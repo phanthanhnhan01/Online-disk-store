@@ -1,0 +1,21 @@
+﻿body {
+}
+.tool {
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+#input-search{
+    width: 700px;
+}
+.cart {
+    position: absolute;
+    right: 70px;
+}
+.account {
+    position: absolute;
+    right: 0;
+}
+.timkiem{
+    margin-left: 40px;
+}

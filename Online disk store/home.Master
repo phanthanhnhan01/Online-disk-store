@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Online_disk_store.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Content/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/home.css" /> 
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class ="tool">
+                <div class ="logo">
+                    <asp:ImageButton ID="ImageButton_logo" ImageUrl="icons/logo.png" runat="server" />
+                </div>
+                <div class ="timkiem"><input id="input-search" type="text"  /></div>
+                <div class ="cart">
+                    <asp:ImageButton ID="ImageButton2_cart" ImageUrl="icons/cart.png" Width="48px" Height="48px" runat="server" />
+                    <div><span>Giỏ Hàng</span> </div>
+                </div>
+                <div class ="account">
+                    <asp:ImageButton ID="ImageButton3_account" ImageUrl="icons/account.png" Width="46px" Height ="47px" runat="server" />
+                    <div><span>Tài khoản</span></div>
+                </div>
+            </div>
+            <div class ="content">
+                <div class="content-1">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="search-min">
+                    <div>Thể loại game</div>
+                    <div> Bộ lọc</div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
